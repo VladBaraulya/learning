@@ -1,5 +1,7 @@
 <h1>Form</h1>
 
-<form action="/amalearn/index/index" method="post">
-    <input name="form" type="text">
+<form action="<?php $block->getUrl("Magento/Checkout/Controller/Cart/Add")?>" method="post">
+    <label for="sku">SKU:</label>
+    <input name="sku" type="text">
+    <button type="submit">button</button>
 </form>
