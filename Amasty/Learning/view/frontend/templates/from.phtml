@@ -1,0 +1,8 @@
+<h1>Form</h1>
+
+<form method="post" action="<?= $block->getUrl('checkout/cart/add'); ?>">
+
+    <label for="sku">SKU:</label>
+    <input name="sku" type="text" id="sku">
+    <button type="submit" title="Add to cart" class="action tocart primary">button</button>
+</form>
