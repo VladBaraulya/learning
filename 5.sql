@@ -1,0 +1,1 @@
+SELECT `persons`.fullname, SUM(`transactions`.amount)  FROM `persons`  INNER JOIN `transactions` on `persons`.id = `transactions`.to_person_id WHERE `persons`.id = 2 group by `persons`.fullname
